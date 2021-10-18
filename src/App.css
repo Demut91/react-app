@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: #282c34;
+  padding-left: 10%;
+}
+
+.logo {
+  max-width: 50px;
+  margin: 20px 20px 20px 0;
+}
+
+.logo img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.content {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 10%;
+}
+
+.message {
+  background-color: white;
+  color: #282c34;
+  text-align: left;
+  padding: 18px;
+  width: calc(25% + 100px);
+  border-radius: 15px;
+  position: relative;
+
+}
+.message::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: -10px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.mess {
+  font-size: calc(10px + 1vmin);
+  margin: 0;
+}
