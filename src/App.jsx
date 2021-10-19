@@ -1,7 +1,7 @@
 import './App.css';
 import './index.css';
 import Message from './message.jsx';
-import logo from './logo192.png'
+import logo from './static/logo192.png'
 
 
 const message =
