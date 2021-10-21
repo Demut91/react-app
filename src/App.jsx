@@ -4,6 +4,7 @@ import { useState } from "react";
 import logo from "./img/logo192.png";
 import MessageList from "./MessageList.jsx";
 import SendingMessage from "./SendingMessage";
+import Answer from "./RoboAnswer.jsx";
 
 function App(props) {
   const [messageList, setMessageList] = useState([]);
@@ -22,6 +23,7 @@ function App(props) {
           messageList={messageList}
           setMessageList={setMessageList}
         />
+        <Answer messageList={messageList} setMessageList={setMessageList} />
       </section>
     </div>
   );
