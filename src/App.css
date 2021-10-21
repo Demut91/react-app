@@ -2,7 +2,6 @@
   min-height: 20vh;
   display: flex;
   align-items: center;
-  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
   background-color: #282c34;
@@ -32,25 +31,42 @@
 .message {
   background-color: white;
   color: #282c34;
-  text-align: left;
   padding: 18px;
   width: calc(25% + 100px);
   border-radius: 15px;
   position: relative;
-
+  margin-bottom: 20px;
+  min-height: 50px;
 }
+
 .message::before {
   content: '';
   display: block;
   position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 30px;
-  left: -10px;
+  width: 15px;
+  height: 15px;
+  top: 25px;
+  left: -7px;
   background-color: white;
   transform: rotate(45deg);
 }
+
 .mess {
   font-size: calc(10px + 1vmin);
   margin: 0;
+}
+
+.mess-input {
+  min-width: calc(25% + 100px);
+  min-height: 100px;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: calc(10px + 1vmin);
+  margin-bottom: 5px;
+}
+
+.mess-send {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: calc(10px + 1vmin);
 }
