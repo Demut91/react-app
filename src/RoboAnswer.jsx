@@ -13,7 +13,7 @@ function Answer({ messageList, setMessageList }) {
     );
   };
 
-  useEffect(() => {
+  const answerTimeout = function () {
     setTimeout(() => {
       if (list.length > 0) {
         let lastAuthor = list[list.length - 1].author;
@@ -22,6 +22,11 @@ function Answer({ messageList, setMessageList }) {
         }
       }
     }, 1500);
+  };
+
+  useEffect(() => {
+    answerTimeout();
+    return clearTimeout(answerTimeout);
   });
   return <></>;
 }
