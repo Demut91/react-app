@@ -14,12 +14,14 @@ function Answer({ messageList, setMessageList }) {
   };
 
   useEffect(() => {
-    if (list.length > 0) {
-      let lastAuthor = list[list.length - 1].author;
-      if (lastAuthor === "k.Cube") {
-        calling();
+    setTimeout(() => {
+      if (list.length > 0) {
+        let lastAuthor = list[list.length - 1].author;
+        if (lastAuthor === "cube") {
+          calling();
+        }
       }
-    }
+    }, 1500);
   });
   return <></>;
 }

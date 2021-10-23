@@ -11,7 +11,7 @@ function SendingMessage({ messageList, setMessageList }) {
       setMessageList(
         (messageList = [
           ...messageList,
-          { id: uuidv4(), author: "k.Cube", body: text },
+          { id: uuidv4(), author: "cube", body: text },
         ])
       );
       setText("");

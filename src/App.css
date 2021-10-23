@@ -29,7 +29,7 @@
 }
 
 .message {
-  background-color: white;
+  background-color: #E0FFFF;
   color: #282c34;
   padding: 18px;
   width: calc(25% + 100px);
@@ -47,8 +47,29 @@
   height: 15px;
   top: 25px;
   left: -7px;
+  background-color: #E0FFFF;
+  transform: rotate(45deg);
+}
+
+.cube {
+  background-color: white;
+  position: relative;
+}
+
+.message.cube::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 25px;
+  right: -7px;
   background-color: white;
   transform: rotate(45deg);
+}
+
+.message.cube::before {
+  display: none;
 }
 
 .mess {
