@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { TextareaAutosize } from "@material-ui/core";
+
+
 
 function SendingMessage({ messageList, setMessageList }) {
   const [text, setText] = useState("");
@@ -15,21 +18,25 @@ function SendingMessage({ messageList, setMessageList }) {
         ])
       );
       setText("");
+      document.getElementById("area").focus();
     }
   };
 
   return (
     <div>
       <form onSubmit={setMess}>
-        <textarea
+        <TextareaAutosize
+          autoFocus={true}
           className="mess-input"
           value={text}
+          id="area"
           onChange={handleTextChange}
         />
         <br />
         <button className="mess-send" type="submit">
           Send
         </button>
+       
       </form>
     </div>
   );
